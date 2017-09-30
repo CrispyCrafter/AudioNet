@@ -11,4 +11,8 @@ To help arrange and review each datalabel I have included a simple PyGame Python
 * ipython3
 * pygame
 
-
+### Audio Format
+* All files are between 1000 and 2000 ms of length
+* All files are single channel little Endian format at 16000 Hz sampling rate
+Files were processed as follows using ffmpeg:
+> ffmpeg -i Foo.bar -c:a pcm_s16le -ar 16000 -ac 1 Foo.wav
