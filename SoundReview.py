@@ -46,5 +46,5 @@ def Review(file):
         Review(file)
 
 
-[Run(y) for x,y  in enumerate(files)]
+[Run(y) for y  in files]
 
